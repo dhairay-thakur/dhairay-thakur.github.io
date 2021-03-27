@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/dhairay-thakur.github.io/static/css/main.1635e87c.chunk.css",
+    "main.js": "/dhairay-thakur.github.io/static/js/main.d151e519.chunk.js",
+    "main.js.map": "/dhairay-thakur.github.io/static/js/main.d151e519.chunk.js.map",
+    "runtime-main.js": "/dhairay-thakur.github.io/static/js/runtime-main.2d91eacf.js",
+    "runtime-main.js.map": "/dhairay-thakur.github.io/static/js/runtime-main.2d91eacf.js.map",
+    "static/js/2.9cde40d0.chunk.js": "/dhairay-thakur.github.io/static/js/2.9cde40d0.chunk.js",
+    "static/js/2.9cde40d0.chunk.js.map": "/dhairay-thakur.github.io/static/js/2.9cde40d0.chunk.js.map",
+    "static/js/3.7c241b6c.chunk.js": "/dhairay-thakur.github.io/static/js/3.7c241b6c.chunk.js",
+    "static/js/3.7c241b6c.chunk.js.map": "/dhairay-thakur.github.io/static/js/3.7c241b6c.chunk.js.map",
+    "index.html": "/dhairay-thakur.github.io/index.html",
+    "static/css/main.1635e87c.chunk.css.map": "/dhairay-thakur.github.io/static/css/main.1635e87c.chunk.css.map",
+    "static/js/2.9cde40d0.chunk.js.LICENSE.txt": "/dhairay-thakur.github.io/static/js/2.9cde40d0.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/dhairay-thakur.github.io/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2d91eacf.js",
+    "static/js/2.9cde40d0.chunk.js",
+    "static/css/main.1635e87c.chunk.css",
+    "static/js/main.d151e519.chunk.js"
+  ]
+}
