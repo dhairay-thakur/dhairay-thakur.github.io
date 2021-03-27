@@ -16,7 +16,6 @@ body{
 button{
     font-family: 'Poppins', sans-serif;
     font-weight:600;
-    font-size:1.1rem;
     cursor: pointer;
     padding:1rem 2rem;
     margin:0rem 2rem 0rem 0rem;
@@ -25,6 +24,12 @@ button{
     background:transparent;
     color:white;
     transition: all 0.5s ease;
+    h4{
+        cursor: pointer;
+        font-family: 'Poppins', sans-serif;
+        font-weight:normal;
+        font-size: 1rem;
+    }
     &:hover{
         background-color:#B8FB3C;
         color:#2A2D34;

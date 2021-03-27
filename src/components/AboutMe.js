@@ -2,10 +2,14 @@ import React from "react";
 
 // styles
 import styled from "styled-components";
+import { motion } from "framer-motion";
+import {  scrollReveal } from "../animation";
+import { useScroll } from "./useScroll";
 
 function AboutMe(props) {
+  const [element, controls] = useScroll();
   return (
-    <Screen>
+    <Screen ref={element} animate={controls} variants={scrollReveal}>
       <AboutSection>
         <h2>About Me</h2>
         <h3>dhjgdjasg vjdsadjksa djksmhksav nsnvcj scvhsa asc</h3>
@@ -15,7 +19,7 @@ function AboutMe(props) {
   );
 }
 
-const Screen = styled.div`
+const Screen = styled(motion.div)`
   min-height: 100vh;
   display: flex;
   flex-direction: column;

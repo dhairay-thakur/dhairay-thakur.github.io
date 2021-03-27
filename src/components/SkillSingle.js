@@ -9,7 +9,7 @@ const SkillSingle = ({ title, skills }) => {
       <Category>
         {skills.map((l) => {
           return (
-            <Skill>
+            <Skill key={l.icon}>
               <img src={`../img/${l.icon}`} alt={l.title} />
               <h3>{l.title}</h3>
             </Skill>

@@ -1,25 +1,27 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 import styled from "styled-components";
 const Nav = (props) => {
   return (
     <StyledNav>
-      <h1>
-        <a href="#">
+      <motion.h1 whileHover={{ scale: 1.2 }}>
+        <Link to="/">
           DT
           <Dot />
-        </a>
-      </h1>
+        </Link>
+      </motion.h1>
       <ul>
-        <li>
-          <a href="#">About</a>
-        </li>
-        <li>
-          <a href="#">Work</a>
-        </li>
-        <li>
-          <a href="#">Contact</a>
-        </li>{" "}
+        <motion.li whileHover={{ scale: 1.2 }}>
+          <Link to="/">About</Link>
+        </motion.li>
+        <motion.li whileHover={{ scale: 1.2 }}>
+          <Link to="/work">Work</Link>
+        </motion.li>
+        <motion.li whileHover={{ scale: 1.2 }}>
+          <Link to="/contact">Contact</Link>
+        </motion.li>
       </ul>
     </StyledNav>
   );
@@ -44,7 +46,7 @@ const StyledNav = styled.nav`
   justify-content: space-between;
   align-items: center;
   padding: 0rem 10rem;
-  background: black;
+  background: #344966;
   a {
     color: white;
     text-decoration: none;

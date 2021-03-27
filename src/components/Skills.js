@@ -3,6 +3,9 @@ import React from "react";
 import SkillSingle from "./SkillSingle";
 
 import styled from "styled-components";
+import { motion } from "framer-motion";
+import { useScroll } from "./useScroll";
+import { scrollReveal } from "../animation";
 
 const languages = [
   {
@@ -22,7 +25,6 @@ const languages = [
     icon: "java.png",
   },
 ];
-
 const frameworks = [
   {
     title: "React/React Native",
@@ -73,9 +75,12 @@ const others = [
     icon: "illustrator.png",
   },
 ];
+
 function Skills(props) {
+  const [element, controls] = useScroll();
+
   return (
-    <Screen>
+    <Screen ref={element} animate={controls} variants={scrollReveal}>
       <h1>Skills</h1>
       <hr />
       <SkillSingle title="Languages" skills={languages} />
@@ -86,7 +91,7 @@ function Skills(props) {
   );
 }
 
-const Screen = styled.div`
+const Screen = styled(motion.div)`
   min-height: 100vh;
   display: flex;
   flex-direction: column;
