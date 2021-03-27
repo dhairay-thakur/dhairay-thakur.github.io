@@ -1,8 +1,9 @@
 import styled from "styled-components";
 
 export const Intro = styled.div`
-  min-height: 100vh;
+  min-height: 92vh;
   display: flex;
+  flex-wrap: wrap-reverse;
   padding: 5rem 10rem;
   color: white;
   align-items: center;

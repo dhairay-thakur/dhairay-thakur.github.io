@@ -14,11 +14,14 @@ body{
 }
 
 button{
-    font-weight:bold;
+    font-family: 'Poppins', sans-serif;
+    font-weight:600;
     font-size:1.1rem;
     cursor: pointer;
     padding:1rem 2rem;
+    margin:0rem 2rem 0rem 0rem;
     border:3px solid #B8FB3C;
+    border-radius: 10rem;
     background:transparent;
     color:white;
     transition: all 0.5s ease;
@@ -26,6 +29,13 @@ button{
         background-color:#B8FB3C;
         color:#2A2D34;
     }
+}
+hr{
+    height:5;
+    width:50%;
+    color:#B8FB3C;
+    background:#B8FB3C;
+    border-color:#B8FB3C;
 }
 h1{
     font-weight:bold;
