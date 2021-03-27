@@ -92,10 +92,10 @@ function Skills(props) {
 }
 
 const Screen = styled(motion.div)`
-  min-height: 100vh;
+  min-height: 93vh;
   display: flex;
   flex-direction: column;
-  padding: 2rem 10rem;
+  padding: 1rem 10rem;
   color: white;
   align-items: center;
   text-align: center;

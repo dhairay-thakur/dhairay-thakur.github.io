@@ -4,6 +4,7 @@ import ProjectCard from "../components/ProjectCard";
 // Animations
 import { motion } from "framer-motion";
 import { fade, pageIntro, pageIntroContainer } from "../animation";
+import ScrollToTop from "../components/ScrollToTop";
 const pageAnimation = {
   hidden: {
     opacity: 0,
@@ -48,6 +49,7 @@ const Work = (props) => {
         <ProjectCard title="Sample Project" description={description} />
         <ProjectCard title="Sample Project" description={description} />
       </View>
+      <ScrollToTop />
     </Screen>
   );
 };
@@ -77,17 +79,17 @@ const Frame1 = styled(motion.div)`
   top: 8vh;
   width: 100%;
   height: 100vh;
-  background: #D8DDEF;
+  background: #d8ddef;
   z-index: 2;
 `;
 const Frame2 = styled(Frame1)`
-  background: #EE6352;
+  background: #ee6352;
 `;
 const Frame3 = styled(Frame1)`
-  background: #45B69C;
+  background: #45b69c;
 `;
 const Frame4 = styled(Frame1)`
-  background: #FAC05E;
+  background: #fac05e;
 `;
 
 export default Work;

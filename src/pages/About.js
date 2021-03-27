@@ -8,6 +8,9 @@ import Skills from "../components/Skills";
 import { motion } from "framer-motion";
 import { pageAnimation } from "../animation";
 
+// scroll to top
+import ScrollToTop from "../components/ScrollToTop";
+
 const About = (props) => {
   return (
     <motion.div
@@ -19,6 +22,7 @@ const About = (props) => {
       <Intro />
       <AboutMe />
       <Skills />
+      <ScrollToTop />
     </motion.div>
   );
 };

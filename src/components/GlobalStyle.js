@@ -11,6 +11,7 @@ const GlobalStyle = createGlobalStyle`
 body{
     background:#2A2D34;
     font-family: 'Poppins', sans-serif;
+    overflow-x:hidden;
 }
 
 button{
@@ -20,9 +21,11 @@ button{
     padding:1rem 2rem;
     margin:0rem 2rem 0rem 0rem;
     border:3px solid #B8FB3C;
+    outline:none;
     border-radius: 10rem;
     background:transparent;
     color:white;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
     transition: all 0.5s ease;
     h4{
         cursor: pointer;
@@ -33,6 +36,12 @@ button{
     &:hover{
         background-color:#B8FB3C;
         color:#2A2D34;
+        border-radius: 10rem;
+    }
+    &:active{
+        background-color:#B8FB3C;
+        color:#2A2D34;
+        border-radius: 10rem;
     }
 }
 hr{

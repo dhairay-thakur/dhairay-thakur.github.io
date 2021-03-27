@@ -3,7 +3,7 @@ import React from "react";
 // styles
 import styled from "styled-components";
 import { motion } from "framer-motion";
-import {  scrollReveal } from "../animation";
+import { scrollReveal } from "../animation";
 import { useScroll } from "./useScroll";
 
 function AboutMe(props) {
@@ -28,6 +28,7 @@ const Screen = styled(motion.div)`
   align-items: center;
   text-align: center;
   justify-content: center;
+  background-color: #0d1821;
 `;
 const AboutSection = styled.div`
   flex: 1;

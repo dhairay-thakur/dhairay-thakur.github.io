@@ -27,13 +27,24 @@ const AboutSection = (props) => {
           </Text>
         </motion.div>
         <motion.p variants={titleAnim}>
-          info about me which is quite long lorem ipsum dolor slit bas itn ahi
-          hai a bsb sab sfsus dms sgfawsd sbdj gja{" "}
+          Junior Undergraduate at IIT (BHU), Varanasi <br/>
+          Software Engineer to be..<br/> 
+          Experienced Mobile App Developer💖
         </motion.p>
-        <motion.button variants={fade}>
+        <motion.button
+          variants={fade}
+          onClick={() => alert("Will Be Updated Soon")}
+        >
           <motion.h4 whileHover={{ scale: 1.2 }}>Resume</motion.h4>
         </motion.button>
-        <motion.button variants={fade}>
+        <motion.button
+          onClick={() =>
+            window.open(
+              "mailto:dhairaythakur.che18@iitbhu.ac.in?subject=Contacting From Portfolio&body="
+            )
+          }
+          variants={fade}
+        >
           <motion.h4 whileHover={{ scale: 1.2 }}>Say Hi!</motion.h4>
         </motion.button>
       </Description>
