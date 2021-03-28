@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import ProjectCard from "../components/ProjectCard";
+// Data
+import { projects } from "../data";
 // Animations
 import { motion } from "framer-motion";
 import { fade, pageIntro, pageIntroContainer } from "../animation";
@@ -22,13 +24,6 @@ const pageAnimation = {
   },
 };
 
-const description = `
-Lorem ipsum dolor sit amet, pro ex duis facer. Sea at quem hinc postea, eos duis veritus id. Te eam summo veritus detracto. Eam minim malorum explicari ea, an vel sint eros. Latine integre constituam qui ex. An velit perfecto eum, at magna nusquam splendide mei, partem assentior cu cum.
-Ea duo quas audiam efficiantur, sea no probatus menandri. Id eum nullam menandri perpetua, vim at detraxit accusamus interpretaris, solet ubique duo ea. Mei ad case facer deleniti, vel dicam vituperatoribus ei. Eu impedit alienum quo, usu ne vivendo urbanitas ea est molestie argumentum referrentur.
-Doctus quaeque numquam vis et, pro case falli ne, unum iracundia nam at. Laudem convenire urbanitas nam ut. Eu mel erat adhuc docendi. Ex mel vidit exerci, et diam vero has, his eu magna recteque. Liber solet graeci cu usu, aperiam integre nostrud ei usu, iusto offendit mei ea.
-Brute quodsi lobortis has ei, ea mea mundi intellegat voluptatibus, ne pro accumsan comprehensam. Et harum molestie vulputate eos, percipit tincidunt pri no, vis quis eius putant eu. Odio legimus phaedrum vim te, id sed lucilius repudiandae. Ut rebum graece iuvaret pri. Ei velit tempor sea, eos id sonet cetero, melius explicari ne has.
-At hinc munere epicuri nec, eu duis percipit vim, has saepe instructior ex. Ei per civibus blandit. Ad soluta dictas doctus vel. Ne docendi gubergren pertinacia per. Duo meliore quaestio no, ut has duis dictas necessitatibus.
-`;
 const Work = (props) => {
   return (
     <Screen
@@ -46,8 +41,15 @@ const Work = (props) => {
       <motion.h1 variants={fade}>My Work</motion.h1>
       <hr />
       <View variants={fade}>
-        <ProjectCard title="Sample Project" description={description} />
-        <ProjectCard title="Sample Project" description={description} />
+        {projects.map((p) => (
+          <ProjectCard
+            title={p.title}
+            description={p.description}
+            img={p.img}
+            link={p.link}
+            key={p.link}
+          />
+        ))}
       </View>
       <ScrollToTop />
     </Screen>
@@ -70,6 +72,9 @@ const Screen = styled(motion.div)`
 
 const View = styled.div`
   display: flex;
+  @media (max-width: 800px) {
+    flex-direction: column;
+  }
 `;
 
 // Frame animation

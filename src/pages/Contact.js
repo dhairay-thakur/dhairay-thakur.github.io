@@ -3,34 +3,8 @@ import { motion } from "framer-motion";
 import React from "react";
 import styled from "styled-components";
 import { pageAnimation, titleAnimY, titleAnim } from "../animation";
-
-const social = [
-  {
-    icon: "mail.png",
-    link:
-      "mailto:dhairaythakur.che18@iitbhu.ac.in?subject=Contacting From Portfolio&body=",
-  },
-  {
-    link: "https://github.com/dhairay-thakur/",
-    icon: "github.png",
-  },
-  {
-    link: "https://www.linkedin.com/in/dhairay-thakur/",
-    icon: "linkedin.png",
-  },
-  {
-    link: "http://instagram.com/dhairay_thakur",
-    icon: "instagram.png",
-  },
-  {
-    link: "https://twitter.com/DhairayT",
-    icon: "twitter.png",
-  },
-  {
-    link: "https://www.facebook.com/dhairay.thakur/",
-    icon: "fb.png",
-  },
-];
+// Data
+import { social } from "../data";
 
 const Contact = (props) => {
   return (
@@ -59,7 +33,7 @@ const Contact = (props) => {
           </Social>
         ))}
       </SocialContainer>
-      <motion.p variants={titleAnim}>Dhairay Thakur ©️2020</motion.p>
+      <motion.p variants={titleAnim}>Dhairay Thakur ©️2021</motion.p>
     </Screen>
   );
 };
@@ -83,10 +57,16 @@ const Screen = styled.div`
     bottom: 0;
     font-size: 1rem;
   }
+  @media (max-width: 800px) {
+    padding: 1rem 1rem;
+  }
 `;
 
 const SocialContainer = styled(motion.div)`
   display: flex;
+  @media (max-width: 800px) {
+    flex-direction: column;
+  }
 `;
 
 const Social = styled(motion.div)`
@@ -94,6 +74,12 @@ const Social = styled(motion.div)`
   padding: 3rem 2.5rem;
   img {
     height: 7vw;
+  }
+  @media (max-width: 800px) {
+    padding: 1rem 2.5rem;
+    img {
+      height: 10vw;
+    }
   }
 `;
 export default Contact;

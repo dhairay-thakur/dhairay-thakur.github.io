@@ -87,6 +87,21 @@ const StyledNav = styled.nav`
     font-size: 30px;
     color: white;
   }
+  @media (max-width: 800px) {
+    flex-direction: column;
+    padding: 1rem 0rem;
+    ul {
+      justify-content: space-around;
+      width: 100%;
+    }
+    li {
+      padding: 0;
+      font-size: 1.2rem;
+    }
+    h1 {
+      font-size: 25px;
+    }
+  }
 `;
 
 const Line = styled(motion.div)`

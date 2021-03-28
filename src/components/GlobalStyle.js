@@ -8,10 +8,20 @@ const GlobalStyle = createGlobalStyle`
     box-sizing:border-box;
 }
 
+html{
+    @media (max-width:1300px){
+        font-size:75%;
+    }
+
+}
+
 body{
     background:#2A2D34;
     font-family: 'Poppins', sans-serif;
     overflow-x:hidden;
+        @media (max-width:800px){
+        /* background-color:gray; */
+    }
 }
 
 button{
@@ -71,6 +81,7 @@ span{
 }
 a{
     font-size:1.1.rem;
+    text-decoration: none;
 }
 p{
     padding: 2rem 0rem;

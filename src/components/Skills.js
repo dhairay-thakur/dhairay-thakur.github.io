@@ -7,74 +7,8 @@ import { motion } from "framer-motion";
 import { useScroll } from "./useScroll";
 import { scrollReveal } from "../animation";
 
-const languages = [
-  {
-    title: "C/C++",
-    icon: "c.png",
-  },
-  {
-    title: "Javascript",
-    icon: "javascript.png",
-  },
-  {
-    title: "Python",
-    icon: "python.png",
-  },
-  {
-    title: "Java",
-    icon: "java.png",
-  },
-];
-const frameworks = [
-  {
-    title: "React/React Native",
-    icon: "react.png",
-  },
-  {
-    title: "NodeJs",
-    icon: "nodejs.png",
-  },
-  {
-    title: "Flutter",
-    icon: "flutter.png",
-  },
-  {
-    title: "Android",
-    icon: "android.png",
-  },
-];
-const databases = [
-  {
-    title: "MySQL",
-    icon: "mysql.png",
-  },
-  {
-    title: "MongoDB",
-    icon: "mongodb.png",
-  },
-];
-const others = [
-  {
-    title: "Git",
-    icon: "git.png",
-  },
-  {
-    title: "Github",
-    icon: "github.png",
-  },
-  {
-    title: "Firebase",
-    icon: "firebase.png",
-  },
-  {
-    title: "PhotoShop",
-    icon: "ps.png",
-  },
-  {
-    title: "Illustrator",
-    icon: "illustrator.png",
-  },
-];
+// Data
+import { languages, frameworks, others, databases } from "../data";
 
 function Skills(props) {
   const [element, controls] = useScroll();

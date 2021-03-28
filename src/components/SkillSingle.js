@@ -2,9 +2,12 @@ import React from "react";
 
 import styled from "styled-components";
 
+import { titleAnim } from "../animation";
+import { motion } from "framer-motion";
+
 const SkillSingle = ({ title, skills }) => {
   return (
-    <View>
+    <View variants={titleAnim}>
       <h2>{title}</h2>
       <Category>
         {skills.map((l) => {
@@ -20,10 +23,11 @@ const SkillSingle = ({ title, skills }) => {
   );
 };
 
-const View = styled.div`
+const View = styled(motion.div)`
   h2 {
     font-size: 1.5rem;
     padding: 1rem;
+    color: wheat;
   }
 `;
 
@@ -39,6 +43,15 @@ const Skill = styled.div`
   h3 {
     font-weight: lighter;
     font-size: 1rem;
+  }
+  @media (max-width: 800px) {
+    padding: 0rem 2vw;
+    img {
+      height: 7vw;
+    }
+    h3 {
+      font-size: 2vw;
+    }
   }
 `;
 export default SkillSingle;
