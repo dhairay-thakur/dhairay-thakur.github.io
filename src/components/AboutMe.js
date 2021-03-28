@@ -80,6 +80,7 @@ const AboutSection = styled.div`
     }
   }
   @media (max-width: 800px) {
+    padding: 5rem 1rem;
     h3 {
       font-weight: lighter;
       font-size: 1.5rem;
