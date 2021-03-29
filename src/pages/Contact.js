@@ -39,6 +39,7 @@ const Contact = (props) => {
 };
 const Screen = styled.div`
   min-height: 93vh;
+  position: relative;
   display: flex;
   flex-direction: column;
   padding: 2rem 10rem;
@@ -55,6 +56,7 @@ const Screen = styled.div`
   p {
     position: absolute;
     bottom: 0;
+    right: 2rem;
     font-size: 1rem;
   }
   @media (max-width: 800px) {
