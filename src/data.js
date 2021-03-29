@@ -71,18 +71,25 @@ export const others = [
 // Projects
 export const projects = [
   {
-    title: "SellItUp Application",
+    title: "Sell-It-Up Application",
     description:
-      "Lorem ipsum dolor sit amet, pro ex duis facer. Sea at quem hinc postea, eos duis veritus id. Te eam summo veritus detracto. Eam minim malorum explicari ea, an vel sint eros. Latine integre constituam qui ex. An velit perfecto eum, at magna nusquam splendide mei, partem assentior cu cum. Ea duo quas audiam efficiantur, sea no probatus menandri.",
-    img: "dhairay.jpg",
-    link: "",
+      "A cross-platform mobile application built using React Native which serves as a marketplace for selling the stuff you don't need anymore. The app is connected to a dedicated Backend built using NodeJS and ExpressJS, with MongoDB as the associated the database.",
+    img: "sell-it-up.jpg",
+    link: "https://github.com/dhairay-thakur/SellItUp-Application---Frontend",
   },
   {
     title: "Music Player",
     description:
-      "Lorem ipsum dolor sit amet, pro ex duis facer. Sea at quem hinc postea, eos duis veritus id. Te eam summo veritus detracto. Eam minim malorum explicari ea, an vel sint eros. Latine integre constituam qui ex. An velit perfecto eum, at magna nusquam splendide mei, partem assentior cu cum. Ea duo quas audiam efficiantur, sea no probatus menandri.",
-    img: "dhairay.jpg",
-    link: "",
+      "A fully functional Music Player Application built using ReactJS having a dedicated library and responsive UI. ",
+    img: "music-player.jpg",
+    link: "https://github.com/dhairay-thakur/music-player",
+  },
+  {
+    title: "Expense Tracker",
+    description:
+      "A cross-platform mobile application built using Flutter to keep track of your expenses, with the spendings of the user over the last 7 days shown in the form of a Bar Graph. ",
+    img: "expense-tracker.jpg",
+    link: "https://github.com/dhairay-thakur/expense_tracker",
   },
 ];
 

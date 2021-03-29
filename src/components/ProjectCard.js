@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 const SkillSingle = ({ title, description, img, link }) => {
   return (
     <View>
-      <a href={link}>
+      <a href={link} target="_blank" rel="noreferrer">
         <motion.img variants={photoAnim} src={`../img/${img}`} alt={title} />
         <h2>{title}</h2>
         <h3>{description}</h3>
