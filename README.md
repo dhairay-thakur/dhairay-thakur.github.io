@@ -1,1 +1,1 @@
-[My Portfolio](dhairaythakur.me) 
+[My Portfolio](http://dhairaythakur.me/#/) 
